@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookNook — Books & Stationery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html"><span>📚</span> BookNook</a>
+  <nav><a href="index.html">Home</a><a href="products.html">Books</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  <div class="head-actions"><button class="icon-btn" onclick="toggleSearch()">⌕</button><a class="cart-link" href="cart.html">🛒 <b id="cartCount">0</b></a></div>
+</header>
+<div id="searchBar" class="searchbar hidden"><input id="searchInput" placeholder="Search books, authors, stationery..." oninput="searchHome()"></div>
+
+<main>
+<section class="hero">
+ <div class="hero-copy"><p class="eyebrow">A cozy corner for curious minds</p><h1>Stories, ideas &<br><em>little things</em> to write them down.</h1>
+ <p>Discover thoughtfully selected books and stationery for every reader, learner and dreamer.</p>
+ <a class="btn" href="products.html">Explore the collection →</a></div>
+ <div class="hero-art"><div class="book-stack"><div>READ<br><small>something wonderful</small></div><div></div><div></div></div></div>
+</section>
+
+<section class="section"><div class="section-head"><div><p class="eyebrow">Browse by mood</p><h2>Find your next favorite</h2></div><a href="products.html">View all →</a></div>
+<div class="categories">
+ <a href="products.html?category=Fiction" class="cat">📖<strong>Fiction</strong><span>Stories & imagination</span></a>
+ <a href="products.html?category=Non-Fiction" class="cat">📘<strong>Non-Fiction</strong><span>Learn & grow</span></a>
+ <a href="products.html?category=Children" class="cat">🧒<strong>Children's</strong><span>Little adventures</span></a>
+ <a href="products.html?category=Stationery" class="cat">✏️<strong>Stationery</strong><span>Make notes beautiful</span></a>
+</div></section>
+
+<section class="section cream"><div class="section-head"><div><p class="eyebrow">Reader favorites</p><h2>Bestsellers</h2></div><a href="products.html">Shop books →</a></div><div id="homeProducts" class="product-grid"></div></section>
+</main>
+<footer><div><b>📚 BookNook</b><p>A warm little bookstore for big ideas.</p></div><div><a href="about.html">About</a><a href="contact.html">Contact</a><a href="products.html">Shop</a></div><small>© 2026 BookNook. Demo e-commerce project.</small></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>
